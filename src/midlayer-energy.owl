@@ -11,3 +11,87 @@ Ontology: <http://www.semanticweb.org/stappel/ontologies/2023/7/midlayer-energy-
 
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000015>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000019>
+
+    
+Class: chemical_energy
+
+    Annotations: 
+        rdfs:label "chemical energy"
+    
+    SubClassOf: 
+        energy
+    
+    
+Class: electrical_energy
+
+    Annotations: 
+        rdfs:label "electrical energy"
+    
+    SubClassOf: 
+        energy
+    
+    
+Class: energy
+
+    Annotations: 
+        rdfs:label "energy"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>
+    
+    
+Class: energy_transfer
+
+    Annotations: 
+        rdfs:label "energy transfer"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
+Class: energy_transformation
+
+    Annotations: 
+        rdfs:label "energy transformation"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
+Class: kinetic_energy
+
+    Annotations: 
+        rdfs:label "kinetic energy"
+    
+    SubClassOf: 
+        energy
+    
+    
+Class: potential_energy
+
+    Annotations: 
+        rdfs:label "potential energy"
+    
+    SubClassOf: 
+        energy
+    
+    
+Class: thermal_energy
+
+    Annotations: 
+        rdfs:label "thermal energy"
+    
+    SubClassOf: 
+        energy
+    
+    
