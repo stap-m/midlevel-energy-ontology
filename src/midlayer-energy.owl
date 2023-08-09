@@ -1,4 +1,5 @@
 Prefix: : <http://www.semanticweb.org/stappel/ontologies/2023/7/midlayer-energy-ontology/>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -11,16 +12,35 @@ Ontology: <http://www.semanticweb.org/stappel/ontologies/2023/7/midlayer-energy-
 
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
+
+    
 AnnotationProperty: rdfs:label
+
+    
+Datatype: rdf:PlainLiteral
 
     
 Datatype: xsd:string
 
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020344>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A field is a material entity without mass that is bearer of some type of energy.",
+        rdfs:label "field"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000040>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 
     
 Class: chemical_energy
@@ -44,6 +64,7 @@ Class: electrical_energy
 Class: energy
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy is a generic term (superclass) for the various kinds of qualities that (a) enable the systematic description of processes that realize the dispositions of entities and (b) are (possibly indirectly) convertible into heat.",
         rdfs:label "energy"
     
     SubClassOf: 
@@ -53,6 +74,7 @@ Class: energy
 Class: energy_transfer
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer is a process in which a type of energy is decreased in one bearer and simultaneously either the same or some other type of energy is increased in another bearer.",
         rdfs:label "energy transfer"
     
     SubClassOf: 
@@ -62,6 +84,7 @@ Class: energy_transfer
 Class: energy_transformation
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transformation is a process in which the amount of one type of energy is decreased, and simultaneously one or more other types of energy are increased.",
         rdfs:label "energy transformation"
     
     SubClassOf: 
