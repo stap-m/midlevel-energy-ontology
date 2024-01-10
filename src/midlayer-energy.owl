@@ -11,6 +11,7 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Ontology: <http://www.semanticweb.org/stappel/ontologies/2023/7/midlayer-energy-ontology>
 
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
+Import: <http://purl.obolibrary.org/obo/ro/releases/2023-02-22/ro.owl>
 
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 
@@ -22,6 +23,9 @@ Datatype: rdf:PlainLiteral
 
     
 Datatype: xsd:string
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020344>
@@ -68,7 +72,8 @@ Class: energy
         rdfs:label "energy"
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000019>
+        <http://purl.obolibrary.org/obo/BFO_0000019>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some <http://purl.obolibrary.org/obo/BFO_0000040>
     
     
 Class: energy_transfer
