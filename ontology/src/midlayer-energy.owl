@@ -25,7 +25,16 @@ Datatype: rdf:PlainLiteral
 Datatype: xsd:string
 
     
+ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000051>
+
+    
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019001>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019002>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020344>
@@ -38,6 +47,41 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020344>
         <http://purl.obolibrary.org/obo/BFO_0000040>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020374>
+
+    Annotations: 
+        rdfs:label "quality process profile"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000144>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
+
+    Annotations: 
+        rdfs:label "energy decrease"
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020374>,
+        <http://purl.obolibrary.org/obo/RO_0019002> some energy
+    
+    DisjointWith: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
+
+    Annotations: 
+        rdfs:label "energy increase"
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020374>,
+        <http://purl.obolibrary.org/obo/RO_0019001> some energy
+    
+    DisjointWith: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
@@ -45,6 +89,9 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000040>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000144>
 
     
 Class: chemical_energy
@@ -83,7 +130,9 @@ Class: energy_transfer
         rdfs:label "energy transfer"
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>
+        <http://purl.obolibrary.org/obo/BFO_0000015>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
     
     
 Class: energy_transformation
@@ -93,7 +142,9 @@ Class: energy_transformation
         rdfs:label "energy transformation"
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>
+        <http://purl.obolibrary.org/obo/BFO_0000015>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
     
     
 Class: kinetic_energy

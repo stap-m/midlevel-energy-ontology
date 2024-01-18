@@ -12,7 +12,6 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ro.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-02-22/ro.owl"/>
-        <rdfs:comment>This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT.</rdfs:comment>
     </owl:Ontology>
     
 
