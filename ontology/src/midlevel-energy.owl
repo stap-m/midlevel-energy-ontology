@@ -28,6 +28,9 @@ Datatype: xsd:string
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000051>
 
     
+ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000054>
+
+    
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
 
     
@@ -50,10 +53,10 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020344>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020374>
 
     Annotations: 
-        rdfs:label "quality process profile"
+        rdfs:label "quality affecting process"
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000144>
+        <http://purl.obolibrary.org/obo/BFO_0000015>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
@@ -82,16 +85,45 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
         <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020377>
+
+    Annotations: 
+        rdfs:label "disposition to perform work"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000016>,
+        <http://purl.obolibrary.org/obo/BFO_0000054> some <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020378>
+
+    Annotations: 
+        rdfs:label "disposition to heat"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000016>,
+        <http://purl.obolibrary.org/obo/BFO_0000054> some <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
+
+    Annotations: 
+        rdfs:label "energy transfer and transformation processes"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000016>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000040>
-
-    
-Class: <http://purl.obolibrary.org/obo/BFO_0000144>
 
     
 Class: chemical_energy
@@ -130,7 +162,7 @@ Class: energy_transfer
         rdfs:label "energy transfer"
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>,
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020379>,
         <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
         <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
     
@@ -142,7 +174,7 @@ Class: energy_transformation
         rdfs:label "energy transformation"
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>,
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020379>,
         <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
         <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
     

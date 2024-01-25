@@ -6,6 +6,7 @@ http://purl.obolibrary.org/obo/BFO_0000020 # sp. dependent continuant
 http://purl.obolibrary.org/obo/BFO_0000019 # quality
 http://purl.obolibrary.org/obo/BFO_0000003 # occurant
 http://purl.obolibrary.org/obo/BFO_0000015 # process
-http://purl.obolibrary.org/obo/BFO_0000144 # process profile
+http://purl.obolibrary.org/obo/BFO_0000016 # disposition
 
 http://purl.obolibrary.org/obo/BFO_0000051 # has part
+http://purl.obolibrary.org/obo/BFO_0000054 # realized in

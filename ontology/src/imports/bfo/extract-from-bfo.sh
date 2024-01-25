@@ -8,7 +8,7 @@ robot merge --input bfo-full-download.owl extract --method MIREOT --lower-terms 
 ## Extract the terms we want without hierarchy
 #robot merge --input ro-full-download.owl extract --method MIREOT --lower-terms ro-extract-n-hierarchy.txt --upper-term owl:topObjectProperty --intermediates none --output ro-extracted-n-hierarchy.owl
 # Create Extracted module
-robot merge --input bfo-extracted.owl annotate --annotation rdfs:comment "This file contains externally imported content from the Basic Formal Ontology (BFO). It is automatically extracted using ROBOT." --output ro-extracted.owl
+robot merge --input bfo-extracted.owl annotate --annotation rdfs:comment "This file contains externally imported content from the Basic Formal Ontology (BFO). It is automatically extracted using ROBOT." --output bfo-extracted.owl
 #robot merge --input ro-extracted-w-hierarchy.owl --input ro-extracted-n-hierarchy.owl annotate --ontology-iri http://openenergy-platform.org/ontology/oeo/imports/ro-extracted.owl --version-iri http://openenergy-platform.org/ontology/oeo/dev/imports/ro-extracted.owl --annotation rdfs:comment "This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT." --output ../../ontology/imports/ro-extracted.owl
 # Remove inSubset axioms
 #robot remove --input ro-extracted.owl --term oboInOwl:inSubset --output ro-extracted.owl
@@ -18,6 +18,6 @@ robot merge --input bfo-extracted.owl annotate --annotation rdfs:comment "This f
 # This is kaputt, makes the annotations appear twice. 
 # robot remove --input ../../ontology/imports/ro-extracted.owl --term BFO:0000002 --term BFO:0000004 --term BFO:0000040 --select "self"  --exclude-term RO:0002577 --exclude-term BFO:0000050 --axioms annotation --signature true --preserve-structure false --output ../../ontology/imports/ro-extracted.owl
 
-rm ro-full-download.owl
-rm ro-extracted-w-hierarchy.owl
+#rm bfo-full-download.owl
+#rm bfo-extracted-w-hierarchy.owl
 #rm ro-extracted-n-hierarchy.owl
