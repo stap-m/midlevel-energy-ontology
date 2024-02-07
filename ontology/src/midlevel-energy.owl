@@ -25,6 +25,22 @@ Datatype: rdf:PlainLiteral
 Datatype: xsd:string
 
     
+ObjectProperty: <http://openenergy-platform.org/ontology/oeo/OEO_00020381>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "",
+        rdfs:label "base of"
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>
+    
+    Range: 
+        <http://purl.obolibrary.org/obo/BFO_0000016>
+    
+    
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000051>
 
     
@@ -34,10 +50,16 @@ ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000054>
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
 
     
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002410>
+
+    
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019001>
 
     
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019002>
+
+    
+ObjectProperty: owl:topObjectProperty
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020344>
@@ -66,6 +88,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020374>,
+        <http://purl.obolibrary.org/obo/RO_0002410> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>,
         <http://purl.obolibrary.org/obo/RO_0019002> some energy
     
     DisjointWith: 
@@ -79,6 +102,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020374>,
+        <http://purl.obolibrary.org/obo/RO_0002410> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
         <http://purl.obolibrary.org/obo/RO_0019001> some energy
     
     DisjointWith: 
@@ -108,7 +132,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020378>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
 
     Annotations: 
-        rdfs:label "energy transfer and transformation processes"
+        rdfs:label "energy transfer or transformation process"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
@@ -134,6 +158,9 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000017>
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020381> some <http://purl.obolibrary.org/obo/BFO_0000016>
+    
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 
