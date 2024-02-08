@@ -147,6 +147,60 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020380>
         <http://purl.obolibrary.org/obo/BFO_0000017>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020382>
+
+    Annotations: 
+        rdfs:label "radiation"
+    
+    SubClassOf: 
+        energy_transfer
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020383>
+
+    Annotations: 
+        rdfs:label "conduction"
+    
+    SubClassOf: 
+        energy_transfer
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020384>
+
+    Annotations: 
+        rdfs:label "convection"
+    
+    SubClassOf: 
+        energy_transfer
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020385>
+
+    Annotations: 
+        rdfs:label "combustion"
+    
+    SubClassOf: 
+        energy_transformation
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020386>
+
+    Annotations: 
+        rdfs:label "photosynthesis"
+    
+    SubClassOf: 
+        energy_transformation
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020387>
+
+    Annotations: 
+        rdfs:label "falling"
+    
+    SubClassOf: 
+        energy_transformation
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
