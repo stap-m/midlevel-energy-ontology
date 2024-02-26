@@ -282,6 +282,7 @@ Class: energy_transformation
 Class: kinetic_energy
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Kinetic energy is a form of energy that stored in the movement of a material entity referring to a static frame of reference.",
         rdfs:label "kinetic energy"
     
     SubClassOf: 
