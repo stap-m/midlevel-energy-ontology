@@ -16,6 +16,9 @@ Import: <http://purl.obolibrary.org/obo/ro/releases/2023-02-22/ro.owl>
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 
     
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
+
+    
 AnnotationProperty: rdfs:label
 
     
@@ -296,6 +299,8 @@ Class: potential_energy
 Class: thermal_energy
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat is a form of energy that is transferred from a point of high temperature to a point of lower temperature, which occurs spontaneously via conduction, convection or radiation.",
+        <http://purl.obolibrary.org/obo/IAO_0000118> "heat",
         rdfs:label "thermal energy"
     
     SubClassOf: 
