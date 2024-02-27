@@ -16,6 +16,9 @@ Import: <http://purl.obolibrary.org/obo/ro/releases/2023-02-22/ro.owl>
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 
     
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
+
+    
 AnnotationProperty: rdfs:label
 
     
@@ -84,6 +87,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020374>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a process which negatively regulates an energy quality which results in an decrease / reduction in the intensity or magnitude of that quality.",
         rdfs:label "energy decrease"
     
     SubClassOf: 
@@ -98,6 +102,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a process which positively regulates an energy quality which results in an increase \\/ rise in the intensity or magnitude of that quality.",
         rdfs:label "energy increase"
     
     SubClassOf: 
@@ -132,6 +137,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020378>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
         rdfs:label "energy transfer or transformation process"
     
     SubClassOf: 
@@ -222,6 +228,7 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 Class: chemical_energy
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is a form of energy that is stored in molecular bonds of a material entity.",
         rdfs:label "chemical energy"
     
     SubClassOf: 
@@ -275,6 +282,7 @@ Class: energy_transformation
 Class: kinetic_energy
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Kinetic energy is a form of energy that stored in the movement of a material entity referring to a static frame of reference.",
         rdfs:label "kinetic energy"
     
     SubClassOf: 
@@ -293,6 +301,8 @@ Class: potential_energy
 Class: thermal_energy
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat is a form of energy that is transferred from a point of high temperature to a point of lower temperature, which occurs spontaneously via conduction, convection or radiation.",
+        <http://purl.obolibrary.org/obo/IAO_0000118> "heat",
         rdfs:label "thermal energy"
     
     SubClassOf: 
