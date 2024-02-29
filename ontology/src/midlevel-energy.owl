@@ -19,6 +19,9 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
 
     
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000119>
+
+    
 AnnotationProperty: rdfs:label
 
     
@@ -27,22 +30,6 @@ Datatype: rdf:PlainLiteral
     
 Datatype: xsd:string
 
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/OEO_00020381>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "",
-        rdfs:label "base of"
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    Domain: 
-        <http://purl.obolibrary.org/obo/BFO_0000019>
-    
-    Range: 
-        <http://purl.obolibrary.org/obo/BFO_0000016>
-    
     
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000051>
 
@@ -62,170 +49,24 @@ ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019001>
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019002>
 
     
+ObjectProperty: MENO_01100
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "",
+        rdfs:label "base of"
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>
+    
+    Range: 
+        <http://purl.obolibrary.org/obo/BFO_0000016>
+    
+    
 ObjectProperty: owl:topObjectProperty
 
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020344>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A field is a material entity without mass that is bearer of some type of energy.",
-        rdfs:label "field"
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000040>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020374>
-
-    Annotations: 
-        rdfs:label "quality affecting process"
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a process which negatively regulates an energy quality which results in an decrease / reduction in the intensity or magnitude of that quality (characteristic).",
-        rdfs:label "energy decrease"
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020374>,
-        <http://purl.obolibrary.org/obo/RO_0002410> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>,
-        <http://purl.obolibrary.org/obo/RO_0019002> some energy
-    
-    DisjointWith: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a process which positively regulates an energy quality which results in an increase \\/ rise in the intensity or magnitude of that quality (characteristic).",
-        rdfs:label "energy increase"
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020374>,
-        <http://purl.obolibrary.org/obo/RO_0002410> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
-        <http://purl.obolibrary.org/obo/RO_0019001> some energy
-    
-    DisjointWith: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020375>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020377>
-
-    Annotations: 
-        rdfs:label "disposition to perform work"
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000016>,
-        <http://purl.obolibrary.org/obo/BFO_0000054> some <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020378>
-
-    Annotations: 
-        rdfs:label "disposition to heat"
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000016>,
-        <http://purl.obolibrary.org/obo/BFO_0000054> some <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020379>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
-        rdfs:label "energy transfer or transformation process"
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020380>
-
-    Annotations: 
-        rdfs:label "extrinsic disposition"
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000017>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020382>
-
-    Annotations: 
-        rdfs:label "radiation"
-    
-    SubClassOf: 
-        energy_transfer
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020383>
-
-    Annotations: 
-        rdfs:label "conduction"
-    
-    SubClassOf: 
-        energy_transfer
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020384>
-
-    Annotations: 
-        rdfs:label "convection"
-    
-    SubClassOf: 
-        energy_transfer
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020385>
-
-    Annotations: 
-        rdfs:label "combustion"
-    
-    SubClassOf: 
-        energy_transformation
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020386>
-
-    Annotations: 
-        rdfs:label "photosynthesis"
-    
-    SubClassOf: 
-        energy_transformation
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020387>
-
-    Annotations: 
-        rdfs:label "falling"
-    
-    SubClassOf: 
-        energy_transformation
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020388>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Rest energy is an energy quality that is stored matter without being usable, i.e. observable in processes. It resides simply in the mass of the ultimate particles and cannot be further explained.",
-        rdfs:label "rest energy"
-    
-    SubClassOf: 
-        energy
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020389>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Radiative energy is energy that photons possess and which is dependend on the frequency and wave length of the photon. Radiative energy is transferred as electromagnetic waves in radiation processes.",
-        rdfs:label "readiative energy"
-    
-    SubClassOf: 
-        energy
-    
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
@@ -239,32 +80,13 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000017>
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020381> some <http://purl.obolibrary.org/obo/BFO_0000016>
+        MENO_01100 some <http://purl.obolibrary.org/obo/BFO_0000016>
     
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 
     
-Class: chemical_energy
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is a form of energy that is stored in molecular bonds of a material entity.",
-        rdfs:label "chemical energy"
-    
-    SubClassOf: 
-        energy
-    
-    
-Class: electrical_energy
-
-    Annotations: 
-        rdfs:label "electrical energy"
-    
-    SubClassOf: 
-        energy
-    
-    
-Class: energy
+Class: MENO_01001
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy is a generic term (superclass) for the various kinds of qualities that (a) enable the systematic description of processes that realize the dispositions of entities and (b) are (possibly indirectly) convertible into heat.",
@@ -275,31 +97,65 @@ Class: energy
         <http://purl.obolibrary.org/obo/RO_0000052> some <http://purl.obolibrary.org/obo/BFO_0000040>
     
     
-Class: energy_transfer
+Class: MENO_01002
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer is a process in which a type of energy is decreased in one bearer and simultaneously either the same or some other type of energy is increased in another bearer.",
         rdfs:label "energy transfer"
     
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020379>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
+        MENO_01004,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01004
     
     
-Class: energy_transformation
+Class: MENO_01003
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transformation is a process in which the amount of one type of energy is decreased, and simultaneously one or more other types of energy are increased.",
         rdfs:label "energy transformation"
     
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020379>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020375>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <http://openenergy-platform.org/ontology/oeo/OEO_00020376>
+        MENO_01004,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01004
     
     
-Class: kinetic_energy
+Class: MENO_01004
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
+        rdfs:label "energy transfer or transformation process"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>,
+        <http://purl.obolibrary.org/obo/RO_0002410> some MENO_01013,
+        <http://purl.obolibrary.org/obo/RO_0019001> some MENO_01001
+    
+    DisjointWith: 
+        MENO_01013
+    
+    
+Class: MENO_01005
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is a form of energy that is stored in molecular bonds of a material entity.",
+        rdfs:label "chemical energy"
+    
+    SubClassOf: 
+        MENO_01001
+    
+    
+Class: MENO_01006
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Electrical energy is a form of energy derived from the potential or kinetic energy of charged particles.",
+        <http://purl.obolibrary.org/obo/IAO_0000119> "http://openenergy-platform.org/ontology/oeo/OEO_00000139",
+        rdfs:label "electrical energy"
+    
+    SubClassOf: 
+        MENO_01001
+    
+    
+Class: MENO_01007
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Kinetic energy is a relational energy quality that stored in the movement of a
@@ -307,20 +163,40 @@ material entity relational/referring to a static frame of reference.",
         rdfs:label "kinetic energy"
     
     SubClassOf: 
-        energy
+        MENO_01001
     
     
-Class: potential_energy
+Class: MENO_01008
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Rest energy is an energy quality that is stored matter without being usable, i.e. observable in processes. It resides simply in the mass of the ultimate particles and cannot be further explained.",
+        rdfs:label "rest energy"
+    
+    SubClassOf: 
+        MENO_01001
+    
+    
+Class: MENO_01009
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Radiative energy is energy that photons possess and which is dependend on the frequency and wave length of the photon. Radiative energy is transferred as electromagnetic waves in radiation processes.",
+        rdfs:label "readiative energy"
+    
+    SubClassOf: 
+        MENO_01001
+    
+    
+Class: MENO_01010
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Gravitational potential energy is a relational energy quality that is stored in the (elevated) position of a material entity relational/referring to the ground (e.g. the Earth's surface).",
         rdfs:label "gravitational potential energy"
     
     SubClassOf: 
-        energy
+        MENO_01001
     
     
-Class: thermal_energy
+Class: MENO_01011
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Heat is a form of energy that is transferred from a point of high temperature to a point of lower temperature, which occurs spontaneously via conduction, convection or radiation.",
@@ -328,6 +204,126 @@ Class: thermal_energy
         rdfs:label "thermal energy"
     
     SubClassOf: 
-        energy
+        MENO_01001
+    
+    
+Class: MENO_01013
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a process which negatively regulates an energy quality which results in an decrease / reduction in the intensity or magnitude of that quality (characteristic).",
+        rdfs:label "energy decrease"
+    
+    SubClassOf: 
+        MENO_01021,
+        <http://purl.obolibrary.org/obo/RO_0002410> some MENO_01004,
+        <http://purl.obolibrary.org/obo/RO_0019002> some MENO_01001
+    
+    DisjointWith: 
+        MENO_01004
+    
+    
+Class: MENO_01014
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a process which positively regulates an energy quality which results in an increase \\/ rise in the intensity or magnitude of that quality (characteristic).",
+        rdfs:label "energy increase"
+    
+    SubClassOf: 
+        MENO_01021,
+        <http://purl.obolibrary.org/obo/RO_0002410> some MENO_01013,
+        <http://purl.obolibrary.org/obo/RO_0019001> some MENO_01001
+    
+    
+Class: MENO_01020
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A field is a material entity without mass that is bearer of some type of energy.",
+        rdfs:label "field"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000040>
+    
+    
+Class: MENO_01021
+
+    Annotations: 
+        rdfs:label "quality affecting process"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
+Class: MENO_01030
+
+    Annotations: 
+        rdfs:label "disposition to perform work"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000016>,
+        <http://purl.obolibrary.org/obo/BFO_0000054> some MENO_01004
+    
+    
+Class: MENO_01031
+
+    Annotations: 
+        rdfs:label "disposition to heat"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000016>,
+        <http://purl.obolibrary.org/obo/BFO_0000054> some MENO_01004
+    
+    
+Class: MENO_01040
+
+    Annotations: 
+        rdfs:label "radiation"
+    
+    SubClassOf: 
+        MENO_01002
+    
+    
+Class: MENO_01041
+
+    Annotations: 
+        rdfs:label "conduction"
+    
+    SubClassOf: 
+        MENO_01002
+    
+    
+Class: MENO_01042
+
+    Annotations: 
+        rdfs:label "convection"
+    
+    SubClassOf: 
+        MENO_01002
+    
+    
+Class: MENO_01043
+
+    Annotations: 
+        rdfs:label "combustion"
+    
+    SubClassOf: 
+        MENO_01003
+    
+    
+Class: MENO_01044
+
+    Annotations: 
+        rdfs:label "photosynthesis"
+    
+    SubClassOf: 
+        MENO_01003
+    
+    
+Class: MENO_01045
+
+    Annotations: 
+        rdfs:label "falling"
+    
+    SubClassOf: 
+        MENO_01003
     
     
