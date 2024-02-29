@@ -67,7 +67,8 @@ ObjectProperty: MENO_01100
     
 ObjectProperty: owl:topObjectProperty
 
-    
+   
+
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
