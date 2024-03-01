@@ -22,6 +22,9 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000119>
 
     
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000602>
+
+    
 AnnotationProperty: rdfs:label
 
     
@@ -52,7 +55,7 @@ ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019002>
 ObjectProperty: MENO_01100
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a quality and a disposition in which the quality grounds the categorical basis for the disposition.",
         rdfs:label "base of"
     
     SubPropertyOf: 
@@ -67,8 +70,7 @@ ObjectProperty: MENO_01100
     
 ObjectProperty: owl:topObjectProperty
 
-   
-
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
@@ -102,22 +104,46 @@ Class: MENO_01002
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer is a process in which a type of energy is decreased in one bearer and simultaneously either the same or some other type of energy is increased in another bearer.",
+        <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (?et) (iff (EnergyTransfer ?et)  
+  (exists (?ed ?ei ?en1 ?en2 ?me1 ?me2) 
+    (and (EnergyDecrease ?ed) (has_part ?et ?ed) 
+      (EnergyIncrease ?ei) (has_part ?et ?ei)
+      (causally_related_to ?ed ?ei)            
+      (Energy ?en1) (negatively_regulates ?ed ?en1) 
+      (Energy ?en2) (positively_regulates ?ei ?en2)  
+      (MaterialEntity ?me1) (MaterialEntity ?me2) 
+      (not (= ?me1 ?me2)) (not (= ?en1 ?en2))
+      (has_participant ?ed ?me1) (inheres_in ?en1 ?me1) 
+      (has_participant ?ei ?me2) (inheres_in ?en2 ?me2) ))))",
         rdfs:label "energy transfer"
     
     SubClassOf: 
         MENO_01004,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01004
+        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01013,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01014
     
     
 Class: MENO_01003
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transformation is a process in which the amount of one type of energy is decreased, and simultaneously one or more other types of energy are increased.",
+        <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (?et) (iff (EnergyTransformation ?et)  
+  (exists (?ed ?ei ?en1 ?en2 ?me) 
+    (and (EnergyDecrease ?ed) (has_part ?et ?ed) 
+      (EnergyIncrease ?ei) (has_part ?et ?ei)
+      (causally_related_to ?ed ?ei)            
+      (Energy ?en1) (Energy ?en2) (not (= ?en1 ?en2))
+      (negatively_regulates ?ed ?en1) 
+      (positively_regulates ?ei ?en2)  
+      (MaterialEntity ?me) 
+      (has_participant ?ed ?me) (has_participant ?ei ?me) 
+      (inheres_in ?en1 ?me) (inheres_in ?en2 ?me) ))))",
         rdfs:label "energy transformation"
     
     SubClassOf: 
         MENO_01004,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01004
+        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01013,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01014
     
     
 Class: MENO_01004
@@ -127,9 +153,7 @@ Class: MENO_01004
         rdfs:label "energy transfer or transformation process"
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>,
-        <http://purl.obolibrary.org/obo/RO_0002410> some MENO_01013,
-        <http://purl.obolibrary.org/obo/RO_0019001> some MENO_01001
+        <http://purl.obolibrary.org/obo/BFO_0000015>
     
     DisjointWith: 
         MENO_01013
@@ -216,7 +240,7 @@ Class: MENO_01013
     
     SubClassOf: 
         MENO_01021,
-        <http://purl.obolibrary.org/obo/RO_0002410> some MENO_01004,
+        <http://purl.obolibrary.org/obo/RO_0002410> some MENO_01014,
         <http://purl.obolibrary.org/obo/RO_0019002> some MENO_01001
     
     DisjointWith: 
@@ -277,6 +301,7 @@ Class: MENO_01031
 Class: MENO_01040
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A radiation process is an energy transfer that transmits radiative energy as electromagnetiv  electromagnetic waves. The transfer does not necessarily occur within a material entity.",
         rdfs:label "radiation"
     
     SubClassOf: 
@@ -286,7 +311,7 @@ Class: MENO_01040
 Class: MENO_01041
 
     Annotations: 
-        rdfs:label "conduction"
+        rdfs:label "electricity conduction"
     
     SubClassOf: 
         MENO_01002
@@ -298,7 +323,7 @@ Class: MENO_01042
         rdfs:label "convection"
     
     SubClassOf: 
-        MENO_01002
+        MENO_01047
     
     
 Class: MENO_01043
@@ -326,5 +351,34 @@ Class: MENO_01045
     
     SubClassOf: 
         MENO_01003
+    
+    
+Class: MENO_01047
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat transfer is an energy transfer of thermal energy that realises a heat flow from the place of higher temperature to the place of lower temperature. It thus realizes the disposition to level temperature.",
+        rdfs:label "heat transfer"
+    
+    SubClassOf: 
+        MENO_01002
+    
+    
+Class: MENO_01048
+
+    Annotations: 
+        rdfs:label "thermal radiation"
+    
+    SubClassOf: 
+        MENO_01047
+    
+    
+Class: MENO_01049
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat conduction is a heat transfer in which thermal energy is transmitted within a material entity or object aggregat.",
+        rdfs:label "heat conduction"
+    
+    SubClassOf: 
+        MENO_01047
     
     
