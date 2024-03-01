@@ -56,7 +56,8 @@ ObjectProperty: MENO_01100
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a quality and a disposition in which the quality grounds the categorical basis for the disposition.",
-        rdfs:label "base of"
+        <http://purl.obolibrary.org/obo/IAO_0000118> "base of",
+        rdfs:label "categorical base of"
     
     SubPropertyOf: 
         owl:topObjectProperty
@@ -150,7 +151,7 @@ Class: MENO_01004
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
-        rdfs:label "energy transfer or transformation process"
+        rdfs:label "transfer or transformation process"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
@@ -166,7 +167,8 @@ Class: MENO_01005
         rdfs:label "chemical energy"
     
     SubClassOf: 
-        MENO_01001
+        MENO_01001,
+        MENO_01100 some MENO_01031
     
     
 Class: MENO_01006
@@ -205,7 +207,7 @@ Class: MENO_01009
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Radiative energy is energy that photons possess and which is dependend on the frequency and wave length of the photon. Radiative energy is transferred as electromagnetic waves in radiation processes.",
-        rdfs:label "readiative energy"
+        rdfs:label "radiative energy"
     
     SubClassOf: 
         MENO_01001
@@ -218,7 +220,8 @@ Class: MENO_01010
         rdfs:label "gravitational potential energy"
     
     SubClassOf: 
-        MENO_01001
+        MENO_01001,
+        MENO_01100 some MENO_01030
     
     
 Class: MENO_01011
@@ -281,7 +284,7 @@ Class: MENO_01021
 Class: MENO_01030
 
     Annotations: 
-        rdfs:label "disposition to perform work"
+        rdfs:label "disposition of an apple to fall"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000016>,
@@ -291,7 +294,7 @@ Class: MENO_01030
 Class: MENO_01031
 
     Annotations: 
-        rdfs:label "disposition to heat"
+        rdfs:label "disposition of a battery to discharge"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000016>,
@@ -311,6 +314,7 @@ Class: MENO_01040
 Class: MENO_01041
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Electricity conduction is an energy transfer in which electrical energy is transmitted within a material entity or object aggregat, e.g. a cable.",
         rdfs:label "electricity conduction"
     
     SubClassOf: 
