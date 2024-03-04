@@ -153,7 +153,7 @@ Class: MENO_01004
         rdfs:label "transfer or transformation process"
     
     EquivalentTo: 
-        (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01038) or (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01039)
+        MENO_01038 or MENO_01039 or (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01038) or (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01039)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
@@ -322,7 +322,7 @@ Class: MENO_01038
         rdfs:label "quality transfer"
     
     SubClassOf: 
-        MENO_01004
+        <http://purl.obolibrary.org/obo/BFO_0000015>
     
     
 Class: MENO_01039
@@ -343,13 +343,13 @@ Class: MENO_01039
         rdfs:label "quality transformation"
     
     SubClassOf: 
-        MENO_01004
+        <http://purl.obolibrary.org/obo/BFO_0000015>
     
     
 Class: MENO_01040
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A radiation process is an energy transfer that transmits radiative energy as electromagnetiv  electromagnetic waves. The transfer does not necessarily occur within a material entity.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A radiation process is an energy transfer that transmits radiative energy as  electromagnetic waves. The transfer does not necessarily occur within a material entity.",
         rdfs:label "radiation"
     
     SubClassOf: 
@@ -369,10 +369,11 @@ Class: MENO_01041
 Class: MENO_01042
 
     Annotations: 
-        rdfs:label "convection"
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat convection is an energy transfer in which thermal energy is transported within flowing gaseous or liquid material entities.",
+        rdfs:label "heat convection"
     
     SubClassOf: 
-        MENO_01047
+        MENO_01002
     
     
 Class: MENO_01043
@@ -402,32 +403,13 @@ Class: MENO_01045
         MENO_01003
     
     
-Class: MENO_01047
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat transfer is an energy transfer of thermal energy that realises a heat flow from the place of higher temperature to the place of lower temperature. It thus realizes the disposition to level temperature.",
-        rdfs:label "heat transfer"
-    
-    SubClassOf: 
-        MENO_01002
-    
-    
-Class: MENO_01048
-
-    Annotations: 
-        rdfs:label "thermal radiation"
-    
-    SubClassOf: 
-        MENO_01047
-    
-    
 Class: MENO_01049
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat conduction is a heat transfer in which thermal energy is transmitted within a material entity or object aggregat.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Heat conduction is an energy transfer in which thermal energy is transmitted within a material entity or object aggregat.",
         rdfs:label "heat conduction"
     
     SubClassOf: 
-        MENO_01047
+        MENO_01002
     
     
