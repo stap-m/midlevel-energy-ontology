@@ -163,7 +163,7 @@ Class: MENO_01004
 Class: MENO_01005
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is a form of energy that is stored in molecular bonds of a material entity.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is an energy quality that is stored in molecular bonds of a material entity.",
         rdfs:label "chemical energy"
     
     SubClassOf: 
@@ -174,7 +174,7 @@ Class: MENO_01005
 Class: MENO_01006
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Electrical energy is a form of energy derived from the potential or kinetic energy of charged particles.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Electrical energy is an energy quality derived from the potential or kinetic energy of charged particles.",
         <http://purl.obolibrary.org/obo/IAO_0000119> "http://openenergy-platform.org/ontology/oeo/OEO_00000139",
         rdfs:label "electrical energy"
     
@@ -206,7 +206,7 @@ Class: MENO_01008
 Class: MENO_01009
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Radiative energy is energy that photons possess and which is dependend on the frequency and wave length of the photon. Radiative energy is transferred as electromagnetic waves in radiation processes.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Radiative energy is an energy quality that photons possess and which is dependend on the frequency and wave length of the photon. Radiative energy is transferred as electromagnetic waves in radiation processes.",
         rdfs:label "radiative energy"
     
     SubClassOf: 
@@ -238,7 +238,7 @@ Class: MENO_01011
 Class: MENO_01013
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a process which negatively regulates an energy quality which results in an decrease / reduction in the intensity or magnitude of that quality (characteristic).",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a process which negatively regulates an energy quality which results in a reduction in the intensity or magnitude of that quality.",
         rdfs:label "energy decrease"
     
     SubClassOf: 
@@ -253,7 +253,7 @@ Class: MENO_01013
 Class: MENO_01014
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a process which positively regulates an energy quality which results in an increase \\/ rise in the intensity or magnitude of that quality (characteristic).",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a process which positively regulates an energy quality which results in a rise in the intensity or magnitude of that quality.",
         rdfs:label "energy increase"
     
     SubClassOf: 
