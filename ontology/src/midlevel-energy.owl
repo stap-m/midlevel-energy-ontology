@@ -72,6 +72,16 @@ ObjectProperty: MENO_01100
 ObjectProperty: owl:topObjectProperty
 
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020397>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Quality increase is a process which positively regulates a quality which results in a rise in the intensity or magnitude of that quality.",
+        rdfs:label "quality increase"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
@@ -104,22 +114,11 @@ Class: MENO_01001
 Class: MENO_01002
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer is a process in which a type of energy is decreased in one bearer and simultaneously either the same or some other type of energy is increased in another bearer.",
-        <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (?et) (iff (EnergyTransfer ?et)  
-  (exists (?ed ?ei ?en1 ?en2 ?me1 ?me2) 
-    (and (EnergyDecrease ?ed) (has_part ?et ?ed) 
-      (EnergyIncrease ?ei) (has_part ?et ?ei)
-      (causally_related_to ?ed ?ei)            
-      (Energy ?en1) (negatively_regulates ?ed ?en1) 
-      (Energy ?en2) (positively_regulates ?ei ?en2)  
-      (MaterialEntity ?me1) (MaterialEntity ?me2) 
-      (not (= ?me1 ?me2)) (not (= ?en1 ?en2))
-      (has_participant ?ed ?me1) (inheres_in ?en1 ?me1) 
-      (has_participant ?ei ?me2) (inheres_in ?en2 ?me2) ))))",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer is a quality process in which a kind of energy is decreased in one bearer and the same kind of energy is increased in another bearer.",
         rdfs:label "energy transfer"
     
     SubClassOf: 
-        MENO_01004,
+        MENO_01038,
         <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01013,
         <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01014
     
@@ -127,7 +126,7 @@ Class: MENO_01002
 Class: MENO_01003
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transformation is a process in which the amount of one type of energy is decreased, and simultaneously one or more other types of energy are increased.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transformation is a process in which one type of energy is decreased, and simultaneously within the same bearer one or more other types of energy are increased.",
         <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (?et) (iff (EnergyTransformation ?et)  
   (exists (?ed ?ei ?en1 ?en2 ?me) 
     (and (EnergyDecrease ?ed) (has_part ?et ?ed) 
@@ -142,7 +141,7 @@ Class: MENO_01003
         rdfs:label "energy transformation"
     
     SubClassOf: 
-        MENO_01004,
+        MENO_01039,
         <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01013,
         <http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01014
     
@@ -152,6 +151,9 @@ Class: MENO_01004
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
         rdfs:label "transfer or transformation process"
+    
+    EquivalentTo: 
+        (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01038) or (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01039)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
@@ -238,7 +240,7 @@ Class: MENO_01011
 Class: MENO_01013
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a process which negatively regulates an energy quality which results in a reduction in the intensity or magnitude of that quality.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a quality decrease which negatively regulates an energy.",
         rdfs:label "energy decrease"
     
     SubClassOf: 
@@ -253,11 +255,11 @@ Class: MENO_01013
 Class: MENO_01014
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a process which positively regulates an energy quality which results in a rise in the intensity or magnitude of that quality.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a quality increase which positively regulates an energy.",
         rdfs:label "energy increase"
     
     SubClassOf: 
-        MENO_01021,
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020397>,
         <http://purl.obolibrary.org/obo/RO_0002410> some MENO_01013,
         <http://purl.obolibrary.org/obo/RO_0019001> some MENO_01001
     
@@ -275,7 +277,8 @@ Class: MENO_01020
 Class: MENO_01021
 
     Annotations: 
-        rdfs:label "quality affecting process"
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Quality decrease is a process which negatively regulates a quality which results in a reduction in the intensity or magnitude of that quality.",
+        rdfs:label "quality decrease"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
@@ -299,6 +302,48 @@ Class: MENO_01031
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000016>,
         <http://purl.obolibrary.org/obo/BFO_0000054> some MENO_01004
+    
+    
+Class: MENO_01038
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Quality transfer is a process in which one quality is decreased in one bearer and, causally interconnected, another quality that inheres in a different bearer is increased.",
+        <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (?et) (iff (QualityTransfer ?et)  
+  (exists (?ed ?ei ?en1 ?en2 ?me1 ?me2) 
+    (and (QualityDecrease ?ed) (has_part ?et ?ed) 
+      (QualityIncrease ?ei) (has_part ?et ?ei)
+      (causally_related_to ?ed ?ei)            
+      (Quality ?en1) (negatively_regulates ?ed ?en1) 
+      (Quality ?en2) (positively_regulates ?ei ?en2)  
+      (MaterialEntity ?me1) (MaterialEntity ?me2) 
+      (not (= ?me1 ?me2)) (not (= ?en1 ?en2))
+      (has_participant ?ed ?me1) (inheres_in ?en1 ?me1) 
+      (has_participant ?ei ?me2) (inheres_in ?en2 ?me2) ))))",
+        rdfs:label "quality transfer"
+    
+    SubClassOf: 
+        MENO_01004
+    
+    
+Class: MENO_01039
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Quality transformation is a process in which one quality is decreased, and, causally interconnected, one or more qualities are increased and all of these qualities inhere in the same bearer.",
+        <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (?et) (iff (QualityTransformation ?et)  
+  (exists (?ed ?ei ?en1 ?en2 ?me) 
+    (and (QualityDecrease ?ed) (has_part ?et ?ed) 
+      (QualityIncrease ?ei) (has_part ?et ?ei)
+      (causally_related_to ?ed ?ei)            
+      (Quality ?en1) (Quality ?en2) (not (= ?en1 ?en2))
+      (negatively_regulates ?ed ?en1) 
+      (positively_regulates ?ei ?en2)  
+      (MaterialEntity ?me) 
+      (has_participant ?ed ?me) (has_participant ?ei ?me) 
+      (inheres_in ?en1 ?me) (inheres_in ?en2 ?me) ))))",
+        rdfs:label "quality transformation"
+    
+    SubClassOf: 
+        MENO_01004
     
     
 Class: MENO_01040
