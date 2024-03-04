@@ -13,6 +13,11 @@ Ontology: <http://www.semanticweb.org/stappel/ontologies/2023/7/midlayer-energy-
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 Import: <http://purl.obolibrary.org/obo/ro/releases/2023-02-22/ro.owl>
 
+Annotations: 
+    <http://purl.org/dc/terms/contributor> "Fabian Neuhaus (@fabianneuhaus)",
+    <http://purl.org/dc/terms/contributor> "Mirjam Stappel (@stap-m)",
+    rdfs:comment "The midlayer energy ontology (MENO) is created to support domain ontologies by offering an ontological structure to describe specific types of energy, energy-based dispositions and energy transformation and transfer processes based on BFO."
+
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 
     
@@ -23,6 +28,12 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000119>
 
     
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000602>
+
+    
+AnnotationProperty: <http://purl.org/dc/terms/contributor>
+
+    
+AnnotationProperty: rdfs:comment
 
     
 AnnotationProperty: rdfs:label
@@ -103,7 +114,9 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 Class: MENO_01001
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy is a generic term (superclass) for the various kinds of qualities that (a) enable the systematic description of processes that realize the dispositions of entities and (b) are (possibly indirectly) convertible into heat.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "x is energy if and only if x is thermal energy or x is a quality that belongs to a
+type of qualities that is (possibly indirectly) transformable to thermal energy via
+quality transformation or transfer.",
         rdfs:label "energy"
     
     SubClassOf: 
@@ -150,10 +163,12 @@ Class: MENO_01004
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
-        rdfs:label "transfer or transformation process"
+        rdfs:label "combined energy transfer and transformation process"
     
     EquivalentTo: 
-        MENO_01038 or MENO_01039 or (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01038) or (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01039)
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+         and (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01002)
+         and (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01003)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
@@ -165,7 +180,7 @@ Class: MENO_01004
 Class: MENO_01005
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is an energy quality that is stored in molecular bonds of a material entity.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is an energy that is stored in molecular bonds of a material entity.",
         rdfs:label "chemical energy"
     
     SubClassOf: 
@@ -414,5 +429,25 @@ Class: MENO_01049
     
     SubClassOf: 
         MENO_01002
+    
+    
+Class: MENO_01050
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Elastic potential energy is an energy that inheres in a material entity due to being deformed, related to its unstressed material structure",
+        rdfs:label "elastic potential energy"
+    
+    SubClassOf: 
+        MENO_01001
+    
+    
+Class: MENO_01051
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Nuclear binding energy is an energy that inheres in material entities due to the bindings of the parts of their atomic nuclei.",
+        rdfs:label "nuclear binding energy"
+    
+    SubClassOf: 
+        MENO_01001
     
     
