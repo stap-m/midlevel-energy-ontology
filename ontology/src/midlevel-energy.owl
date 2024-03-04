@@ -379,6 +379,7 @@ Class: MENO_01042
 Class: MENO_01043
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Combustion is an energy transformation in which chemical energy from a fuel is transformed into thermal energy and other kinds of energy, e.g. radiative energy.",
         rdfs:label "combustion"
     
     SubClassOf: 
@@ -388,6 +389,7 @@ Class: MENO_01043
 Class: MENO_01044
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Photosynthesis is an energy transformation in which radiative (solar) energy is transformed into chemical energy within a plant.",
         rdfs:label "photosynthesis"
     
     SubClassOf: 
@@ -397,6 +399,7 @@ Class: MENO_01044
 Class: MENO_01045
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Falling is an energy transformation in which gravitational potential energy is transformed into kintetic energy.",
         rdfs:label "falling"
     
     SubClassOf: 
