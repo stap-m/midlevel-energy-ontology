@@ -14,8 +14,8 @@ Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 Import: <http://purl.obolibrary.org/obo/ro/releases/2023-02-22/ro.owl>
 
 Annotations: 
-    <http://purl.org/dc/terms/contributor> "Fabian Neuhaus ("@fabianneuhaus),
-    <http://purl.org/dc/terms/contributor> "Mirjam Stappel ("@stap-m),
+    <http://purl.org/dc/terms/contributor> "Fabian Neuhaus",
+    <http://purl.org/dc/terms/contributor> "Mirjam Stappel",
     rdfs:comment "The midlayer energy ontology (MENO) is created to support domain ontologies by offering an ontological structure to describe specific types of energy, energy-based dispositions and energy transformation and transfer processes based on BFO."
 
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
