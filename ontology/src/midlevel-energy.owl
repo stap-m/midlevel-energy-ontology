@@ -63,7 +63,7 @@ ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019001>
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019002>
 
     
-ObjectProperty: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01100>
+ObjectProperty: <MENO_01100>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a quality and a disposition in which the quality grounds the categorical basis for the disposition.",
@@ -105,13 +105,13 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000017>
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01100> some <http://purl.obolibrary.org/obo/BFO_0000016>
+        <MENO_01100> some <http://purl.obolibrary.org/obo/BFO_0000016>
     
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+Class: <MENO_01001>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "x is energy if and only if x is thermal energy or x is a quality that belongs to a
@@ -124,19 +124,19 @@ quality transformation or transfer.",
         <http://purl.obolibrary.org/obo/RO_0000052> some <http://purl.obolibrary.org/obo/BFO_0000040>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01002>
+Class: <MENO_01002>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer is a quality process in which a kind of energy is decreased in one bearer and the same kind of energy is increased in another bearer.",
         rdfs:label "energy transfer"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01038>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01013>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01014>
+        <MENO_01038>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <MENO_01013>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <MENO_01014>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01003>
+Class: <MENO_01003>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transformation is a process in which one type of energy is decreased, and simultaneously within the same bearer one or more other types of energy are increased.",
@@ -154,12 +154,12 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
         rdfs:label "energy transformation"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01039>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01013>,
-        <http://purl.obolibrary.org/obo/BFO_0000051> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01014>
+        <MENO_01039>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <MENO_01013>,
+        <http://purl.obolibrary.org/obo/BFO_0000051> some <MENO_01014>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01004>
+Class: <MENO_01004>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
@@ -167,28 +167,28 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
-         and (<http://purl.obolibrary.org/obo/BFO_0000051> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01002>)
-         and (<http://purl.obolibrary.org/obo/BFO_0000051> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01003>)
+         and (<http://purl.obolibrary.org/obo/BFO_0000051> some <MENO_01002>)
+         and (<http://purl.obolibrary.org/obo/BFO_0000051> some <MENO_01003>)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
     
     DisjointWith: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01013>
+        <MENO_01013>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01005>
+Class: <MENO_01005>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical energy is an energy that is stored in molecular bonds of a material entity.",
         rdfs:label "chemical energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>,
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01100> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01031>
+        <MENO_01001>,
+        <MENO_01100> some <MENO_01031>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01006>
+Class: <MENO_01006>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Electrical energy is an energy quality derived from the potential or kinetic energy of charged particles.",
@@ -196,10 +196,10 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
         rdfs:label "electrical energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01001>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01007>
+Class: <MENO_01007>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Kinetic energy is a relational energy quality that stored in the movement of a
@@ -207,41 +207,41 @@ material entity relational/referring to a static frame of reference.",
         rdfs:label "kinetic energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01001>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01008>
+Class: <MENO_01008>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Rest energy is an energy quality that is stored matter without being usable, i.e. observable in processes. It resides simply in the mass of the ultimate particles and cannot be further explained.",
         rdfs:label "rest energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01001>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01009>
+Class: <MENO_01009>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Radiative energy is an energy quality that photons possess and which is dependend on the frequency and wave length of the photon. Radiative energy is transferred as electromagnetic waves in radiation processes.",
         rdfs:label "radiative energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01001>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01010>
+Class: <MENO_01010>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Gravitational potential energy is a relational energy quality that is stored in the (elevated) position of a material entity relational/referring to the ground (e.g. the Earth's surface).",
         rdfs:label "gravitational potential energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>,
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01100> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01030>
+        <MENO_01001>,
+        <MENO_01100> some <MENO_01030>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01011>
+Class: <MENO_01011>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Heat is a form of energy that is transferred from a point of high temperature to a point of lower temperature, which occurs spontaneously via conduction, convection or radiation.",
@@ -249,25 +249,25 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
         rdfs:label "thermal energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01001>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01013>
+Class: <MENO_01013>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy decrease is a quality decrease which negatively regulates an energy.",
         rdfs:label "energy decrease"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01021>,
-        <http://purl.obolibrary.org/obo/RO_0002410> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01014>,
-        <http://purl.obolibrary.org/obo/RO_0019002> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01021>,
+        <http://purl.obolibrary.org/obo/RO_0002410> some <MENO_01014>,
+        <http://purl.obolibrary.org/obo/RO_0019002> some <MENO_01001>
     
     DisjointWith: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01004>
+        <MENO_01004>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01014>
+Class: <MENO_01014>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy increase is a quality increase which positively regulates an energy.",
@@ -275,11 +275,11 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020397>,
-        <http://purl.obolibrary.org/obo/RO_0002410> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01013>,
-        <http://purl.obolibrary.org/obo/RO_0019001> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <http://purl.obolibrary.org/obo/RO_0002410> some <MENO_01013>,
+        <http://purl.obolibrary.org/obo/RO_0019001> some <MENO_01001>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01020>
+Class: <MENO_01020>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A field is a material entity without mass that is bearer of some type of energy.",
@@ -289,7 +289,7 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
         <http://purl.obolibrary.org/obo/BFO_0000040>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01021>
+Class: <MENO_01021>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Quality decrease is a process which negatively regulates a quality which results in a reduction in the intensity or magnitude of that quality.",
@@ -299,27 +299,27 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
         <http://purl.obolibrary.org/obo/BFO_0000015>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01030>
+Class: <MENO_01030>
 
     Annotations: 
         rdfs:label "disposition of an apple to fall"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000016>,
-        <http://purl.obolibrary.org/obo/BFO_0000054> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01004>
+        <http://purl.obolibrary.org/obo/BFO_0000054> some <MENO_01004>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01031>
+Class: <MENO_01031>
 
     Annotations: 
         rdfs:label "disposition of a battery to discharge"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000016>,
-        <http://purl.obolibrary.org/obo/BFO_0000054> some <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01004>
+        <http://purl.obolibrary.org/obo/BFO_0000054> some <MENO_01004>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01038>
+Class: <MENO_01038>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Quality transfer is a process in which one quality is decreased in one bearer and, causally interconnected, another quality that inheres in a different bearer is increased.",
@@ -340,7 +340,7 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
         <http://purl.obolibrary.org/obo/BFO_0000015>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01039>
+Class: <MENO_01039>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Quality transformation is a process in which one quality is decreased, and, causally interconnected, one or more qualities are increased and all of these qualities inhere in the same bearer.",
@@ -361,93 +361,93 @@ Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/o
         <http://purl.obolibrary.org/obo/BFO_0000015>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01040>
+Class: <MENO_01040>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A radiation process is an energy transfer that transmits radiative energy as  electromagnetic waves. The transfer does not necessarily occur within a material entity.",
         rdfs:label "radiation"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01002>
+        <MENO_01002>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01041>
+Class: <MENO_01041>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Electricity conduction is an energy transfer in which electrical energy is transmitted within a material entity or object aggregat, e.g. a cable.",
         rdfs:label "electricity conduction"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01002>
+        <MENO_01002>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01042>
+Class: <MENO_01042>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Heat convection is an energy transfer in which thermal energy is transported within flowing gaseous or liquid material entities.",
         rdfs:label "heat convection"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01002>
+        <MENO_01002>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01043>
+Class: <MENO_01043>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Combustion is an energy transformation in which chemical energy from a fuel is transformed into thermal energy and other kinds of energy, e.g. radiative energy.",
         rdfs:label "combustion"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01003>
+        <MENO_01003>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01044>
+Class: <MENO_01044>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Photosynthesis is an energy transformation in which radiative (solar) energy is transformed into chemical energy within a plant.",
         rdfs:label "photosynthesis"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01003>
+        <MENO_01003>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01045>
+Class: <MENO_01045>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Falling is an energy transformation in which gravitational potential energy is transformed into kintetic energy.",
         rdfs:label "falling"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01003>
+        <MENO_01003>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01049>
+Class: <MENO_01049>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Heat conduction is an energy transfer in which thermal energy is transmitted within a material entity or object aggregat.",
         rdfs:label "heat conduction"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01002>
+        <MENO_01002>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01050>
+Class: <MENO_01050>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Elastic potential energy is an energy that inheres in a material entity due to being deformed, related to its unstressed material structure",
         rdfs:label "elastic potential energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01001>
     
     
-Class: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01051>
+Class: <MENO_01051>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Nuclear binding energy is an energy that inheres in material entities due to the bindings of the parts of their atomic nuclei.",
         rdfs:label "nuclear binding energy"
     
     SubClassOf: 
-        <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl//MENO_01001>
+        <MENO_01001>
     
     
