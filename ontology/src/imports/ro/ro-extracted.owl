@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ro.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-02-22/ro.owl"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/imports/ro-extracted.owl">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/dev/ontology/imports/ro-extracted.owl"/>
         <rdfs:comment>This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT.</rdfs:comment>
     </owl:Ontology>
     

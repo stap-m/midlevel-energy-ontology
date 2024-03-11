@@ -9,7 +9,7 @@ robot merge --input ro-full-download.owl extract --method MIREOT --lower-terms r
 #robot merge --input ro-full-download.owl extract --method MIREOT --lower-terms ro-extract-n-hierarchy.txt --upper-term owl:topObjectProperty --intermediates none --output ro-extracted-n-hierarchy.owl
 # Create Extracted module
 robot merge --input ro-extracted-w-hierarchy.owl annotate --annotation rdfs:comment "This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT." --output ro-extracted.owl
-#robot merge --input ro-extracted-w-hierarchy.owl --input ro-extracted-n-hierarchy.owl annotate --ontology-iri http://openenergy-platform.org/ontology/oeo/imports/ro-extracted.owl --version-iri http://openenergy-platform.org/ontology/oeo/dev/imports/ro-extracted.owl --annotation rdfs:comment "This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT." --output ../../ontology/imports/ro-extracted.owl
+#robot merge --input ro-extracted-w-hierarchy.owl --input ro-extracted-n-hierarchy.owl annotate --ontology-iri https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/imports/ro-extracted.owl --version-iri https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/dev/ontology/imports/ro-extracted.owl --annotation rdfs:comment "This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT." --output ../../ontology/imports/ro-extracted.owl
 # Remove inSubset axioms
 #robot remove --input ro-extracted.owl --term oboInOwl:inSubset --output ro-extracted.owl
 # Remove subclass axioms from BFO classes
