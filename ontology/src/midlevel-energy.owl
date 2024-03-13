@@ -11,7 +11,7 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Ontology: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl/>
 
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
-Import: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/imports/ro-extracted.owl>
+Import: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/imports/ro/ro-extracted.owl>
 
 Annotations: 
     <http://purl.org/dc/terms/contributor> "Fabian Neuhaus",
