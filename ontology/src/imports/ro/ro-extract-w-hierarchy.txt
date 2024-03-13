@@ -4,3 +4,4 @@ http://purl.obolibrary.org/obo/RO_0000056 # participates in
 http://purl.obolibrary.org/obo/RO_0019001 # positively regulates characteristic
 http://purl.obolibrary.org/obo/RO_0019002 # negatively regulates characteristic
 http://purl.obolibrary.org/obo/BFO_0000051 # has part
+http://purl.obolibrary.org/obo/BFO_0000054 # realized in
