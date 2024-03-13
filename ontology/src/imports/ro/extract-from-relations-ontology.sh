@@ -4,12 +4,12 @@ curl -L https://raw.githubusercontent.com/oborel/obo-relations/v2023-02-22/ro.ow
 # runs with ROBOT v1.91
 robot annotate --input ro-full-download.owl --annotate-derived-from true --output ro-full-download.owl
 # Extract the terms we want with hierarchy
-robot merge --input ro-full-download.owl extract --method MIREOT --lower-terms ro-extract-w-hierarchy.txt --intermediates all --output ro-extracted-w-hierarchy.owl
+robot merge --input ro-full-download.owl extract --method MIREOT --lower-terms ro-extract-w-hierarchy.txt --intermediates all --output ro-extracted.owl
 ## Extract the terms we want without hierarchy
 #robot merge --input ro-full-download.owl extract --method MIREOT --lower-terms ro-extract-n-hierarchy.txt --upper-term owl:topObjectProperty --intermediates none --output ro-extracted-n-hierarchy.owl
 # Create Extracted module
-robot merge --input ro-extracted-w-hierarchy.owl annotate --annotation rdfs:comment "This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT." --output ro-extracted.owl
-#robot merge --input ro-extracted-w-hierarchy.owl --input ro-extracted-n-hierarchy.owl annotate --ontology-iri https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/imports/ro-extracted.owl --version-iri https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/dev/ontology/imports/ro-extracted.owl --annotation rdfs:comment "This file contains externally imported content from the Relations Ontology (RO). It is automatically extracted using ROBOT." --output ../../ontology/imports/ro-extracted.owl
+robot merge --input ro-extracted.owl annotate --annotation rdfs:comment "This file contains externally imported content from the Relations Ontology (RO) for MENO. It is automatically extracted using ROBOT." --output ro-extracted.owl
+robot merge --input ro-extracted.owl annotate --ontology-iri https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/imports/ro/ro-extracted.owl --version-iri https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/dev/ontology/src/imports/ro/ro-extracted.owl --output ro-extracted.owl
 # Remove inSubset axioms
 #robot remove --input ro-extracted.owl --term oboInOwl:inSubset --output ro-extracted.owl
 # Remove subclass axioms from BFO classes
