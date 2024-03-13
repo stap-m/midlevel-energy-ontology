@@ -47,15 +47,42 @@ Datatype: xsd:string
     
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000051>
 
+    Characteristics: 
+        Transitive
+    
     
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000054>
 
+    Domain: 
+        <http://purl.obolibrary.org/obo/BFO_0000017>
+    
+    Range: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
     
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
 
     
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000056>
+
+    Domain: 
+        <http://purl.obolibrary.org/obo/BFO_0000002>
+    
+    Range: 
+        <http://purl.obolibrary.org/obo/BFO_0000003>
+    
+    
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002410>
 
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019000>
+
+    Domain: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    Range: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>
+    
     
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0019001>
 
@@ -83,15 +110,11 @@ ObjectProperty: MENO_01100
 ObjectProperty: owl:topObjectProperty
 
     
-Class: MENO_01022
+Class: <http://purl.obolibrary.org/obo/BFO_0000002>
 
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Quality increase is a process which positively regulates a quality which results in a rise in the intensity or magnitude of that quality.",
-        rdfs:label "quality increase"
     
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>
-    
+Class: <http://purl.obolibrary.org/obo/BFO_0000003>
+
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
@@ -294,6 +317,16 @@ Class: MENO_01021
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Quality decrease is a process which negatively regulates a quality which results in a reduction in the intensity or magnitude of that quality.",
         rdfs:label "quality decrease"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
+Class: MENO_01022
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Quality increase is a process which positively regulates a quality which results in a rise in the intensity or magnitude of that quality.",
+        rdfs:label "quality increase"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
