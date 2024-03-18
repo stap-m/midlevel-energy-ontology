@@ -27,6 +27,9 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000119>
 
     
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000600>
+
+    
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000602>
 
     
@@ -48,7 +51,8 @@ Datatype: xsd:string
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000051>
 
     Characteristics: 
-        Transitive
+        Transitive,
+        Reflexive
     
     
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000054>
@@ -194,13 +198,13 @@ Class: MENO_01003
 Class: MENO_01004
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer or transformation process is a process that has energy transfer and/or energy transformation processes as part.",
-        rdfs:label "combined energy transfer and transformation process"
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energetic conversion process is a process that has energy transfer or energy transformation processes as part.",
+        <http://purl.obolibrary.org/obo/IAO_0000600> "Energetic conversion processes comprise any non-idealised processes. The term 'energetic conversion' is chosen as collective term for energy transformations and energy transfers. However, literature is ambiguous in its interpretation. Some sources refer to energy conversion as synonym for energy transformation.",
+        rdfs:label "energetic conversion process"
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
-         and (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01002)
-         and (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01003)
+         and ((<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01002) or (<http://purl.obolibrary.org/obo/BFO_0000051> some MENO_01003))
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
