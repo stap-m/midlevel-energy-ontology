@@ -198,7 +198,7 @@ Class: MENO_01003
 Class: MENO_01004
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Energetic conversion process is a process that has energy transfer or energy transformation processes as part.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Energetic conversion process is a process that has energy transfers or energy transformations (or both) as part.",
         <http://purl.obolibrary.org/obo/IAO_0000600> "Energetic conversion processes comprise any non-idealised processes. The term 'energetic conversion' is chosen as collective term for energy transformations and energy transfers. However, literature is ambiguous in its interpretation. Some sources refer to energy conversion as synonym for energy transformation.",
         rdfs:label "energetic conversion process"
     
