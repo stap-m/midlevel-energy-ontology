@@ -164,6 +164,17 @@ Class: MENO_01002
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Energy transfer is a quality process in which a kind of energy is decreased in one bearer and the same kind of energy is increased in another bearer.",
+        <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (?et) (iff (EnergyTransfer ?et)  
+  (exists (?ed ?ei ?en1 ?en2 ?me1 ?me2) 
+    (and (EnergyDecrease ?ed) (has_part ?et ?ed) 
+      (EnergyIncrease ?ei) (has_part ?et ?ei)
+      (causally_related_to ?ed ?ei)            
+      (Energy ?en1) (negatively_regulates ?ed ?en1) 
+      (Energy ?en2) (positively_regulates ?ei ?en2)  
+      (MaterialEntity ?me1) (MaterialEntity ?me2) 
+      (not (= ?me1 ?me2)) (not (= ?en1 ?en2))
+      (has_participant ?ed ?me1) (inheres_in ?en1 ?me1) 
+      (has_participant ?ei ?me2) (inheres_in ?en2 ?me2) ))))",
         rdfs:label "energy transfer"
     
     SubClassOf: 
