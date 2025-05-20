@@ -21,6 +21,9 @@ Annotations:
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 
     
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000116>
+
+    
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
 
     
@@ -35,6 +38,16 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000602>
     
 AnnotationProperty: <http://purl.org/dc/terms/contributor>
 
+    
+AnnotationProperty: <https://openenergyplatform.org/ontology/oeo/OEO_00020426>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A term tracker annotation is an editor note used to track the history of an entity. For each change, it records the related GitHub issue and pull request.",
+        rdfs:label "term tracker annotation"@de
+    
+    SubPropertyOf: 
+        <http://purl.obolibrary.org/obo/IAO_0000116>
+    
     
 AnnotationProperty: rdfs:comment
 
