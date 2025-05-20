@@ -188,7 +188,10 @@ Class: MENO_01002
       (not (= ?me1 ?me2)) (not (= ?en1 ?en2))
       (has_participant ?ed ?me1) (inheres_in ?en1 ?me1) 
       (has_participant ?ei ?me2) (inheres_in ?en2 ?me2) ))))",
-        rdfs:label "energy transfer"
+        rdfs:label "energy transfer",
+        <https://openenergyplatform.org/ontology/oeo/OEO_00020426> "add missing FOL axiom
+https://github.com/stap-m/midlevel-energy-ontology/issues/31
+https://github.com/stap-m/midlevel-energy-ontology/pull/32"
     
     SubClassOf: 
         MENO_01038,
