@@ -1,0 +1,20 @@
+#comment: "This mapping was created following and expanding upon the SSSOM guidance: https://mapping-commons.github.io/sssom/spec/"
+#license: "https://creativecommons.org/publicdomain/zero/1.0/"
+#mapping_set_version: "0.1"
+#mapping_date: '2025-03-02'
+#subject_source: https://github.com/stap-m/midlevel-energy-ontology/blob/dev/ontology/src/midlevel-energy.owl
+#object_source: https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/develop/src/cco-merged/CommonCoreOntologiesMerged.ttl
+#subject_source_version: v2024-03-18
+#object_source_version: v2024-11-06
+#creator_id:
+#  - orcid:0009-0005-5175-4798
+#creator_label:
+#  - Lilly Gerlach
+#curie_map:
+#  MENO: "https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/midlevel-energy.owl/MENO_"
+#  CCO: "https://www.commoncoreontologies.org/ont"
+#  skos: "http://www.w3.org/2004/02/skos/core#"
+subject_id  subject_label  object_id	object_label	predicate_id	mapping_justification  comment
+
+MENO:01021  quality decrease  CCO:00000535  Decrease of Quality  skos:exactMatch  semapv:ManualMappingCuration  -
+MENO:01022  quality increase  CCO:00000131  Increase of Quality  skos:exactMatch  semapv:ManualMappingCuration  -
